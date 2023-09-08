@@ -1,0 +1,99 @@
+/* Reset some default browser styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0077b5; /* LinkedIn Blue */
+    font-size: 32px;
+}
+
+p {
+    color: #777;
+    font-size: 16px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the contact information section */
+.section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the summary section */
+.section p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Style the education and experience sections */
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style the skills section */
+.section ul.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.section ul.skills-list li {
+    flex-basis: calc(33.33% - 10px); /* Adjust as needed */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #0077b5; /* LinkedIn Blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Add hover effect to skills */
+.section ul.skills-list li:hover {
+    background-color: #005b8e; /* Darker LinkedIn Blue */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .section {
+        padding: 10px;
+    }
+    
+    /* Adjust styles for smaller screens as needed */
+}
